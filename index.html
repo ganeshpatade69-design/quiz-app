@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloud Quiz App</title>
+</head>
+<body>
+
+<h2>Cloud Quiz App</h2>
+
+<p id="question">What is Cloud Computing?</p>
+
+<button onclick="checkAnswer(true)">Internet-based service</button>
+<button onclick="checkAnswer(false)">Only hardware</button>
+
+<p id="result"></p>
+
+<script>
+function checkAnswer(ans) {
+    if(ans) {
+        document.getElementById("result").innerHTML = "Correct Answer ✅";
+    } else {
+        document.getElementById("result").innerHTML = "Wrong Answer ❌";
+    }
+}
+</script>
+
+</body>
+</html>
